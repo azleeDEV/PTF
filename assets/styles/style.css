@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-image: url('./../images/Back.jpg');
+    background-size:cover ;
+    background-repeat:no-repeat;
+    background-attachment: scroll;
+}
+
+nav{
+    background-color: whitesmoke;
+    border-bottom: 1px solid;
+    font-family: "League Spartan", sans-serif;
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+.navbar .logo img{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 45px;
+    border-radius: 10px;
+}
+
+.navbar .logo{
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.navbar span{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.navbar .nav-links ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.navbar > span{
+    display: none;
+}
+
+.navbar .nav-links ul li a:hover{
+    color: rgb(92, 92, 92);
+}
+
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    margin: 0 25px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    display: none;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.menu i {
+    transition: all 0.3s ease;
+  }
+  
+  .menu.open i {
+    transform: rotate(90deg);
+  }
+  
+  .menu.open i:before {
+    content: '\f00d';
+    color: whitesmoke;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 25px;
+  }
+
+  .a-propos{
+    /* background-color: #494949 !important; */
+    height: 100vh;
+    padding-bottom: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-items: center;
+  }
+  
+  .a-propos-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: auto;
+    padding-top: 200px;
+  }
+
+  .a-propos-container img{
+    width: 300px;
+    border-radius: 95px;
+    border: solid 3px rgb(255, 255, 255);
+  }
+
+  .a-propos-container p{
+    font-family:"League Spartan", sans-serif;
+    color: rgb(216, 216, 216);
+    text-shadow: 2px 1px 2px rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 23px;
+    text-align: center;
+    width: 475px;
+    margin: 20px;
+    border-radius: 40px;
+    line-height: 130%;
+  }
+
+  .span-p{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 1px 2px rgb(0, 0, 0);
+  }
+
+  .tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .tags li button{
+        padding: 8px;
+        border-radius: 100PX;
+        border: none;
+        color: white;
+        background-color: rgb(29, 29, 29);
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+
+  .button-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#000000;
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    border: solid 3px rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .button-arrow:hover{
+    background-color: rgb(63, 62, 62);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+  }
+
+  .button-arrow i{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+
+  .flex-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+@media screen and (max-width: 992px) {
+    
+    .navbar{
+        padding: 0;
+        align-items: center;
+        height: 65px;
+    }
+    
+    .navbar .logo img{
+        width: 40px;
+    }
+
+    .navbar > span{
+        display: block;
+        font-size: 21px;
+    }
+
+    .navbar a span{
+        display: none;
+    }
+
+    .navbar .nav-links ul li a{
+        font-size: 20px;
+        color: whitesmoke !important;
+    }
+
+    .navbar .logo{
+        padding: 30px;
+        color: black;
+        gap: 90px;
+    }
+
+    nav{
+        background-color: white;
+        border-bottom: 0px;
+    }
+
+    .nav-links{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -200vh;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.mobile-nav{
+        margin-left: 0 !important;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+    }
+     .nav-links ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+     }
+
+     .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 25px;
+        font-weight: 1000;
+    }
+    .menu {
+        color: black !important;
+        display: block;
+        padding: 37px;
+    }
+
+    .a-propos{
+        padding-top: 80px;
+        padding-bottom: 130px;
+    }
+    .a-propos-container{
+        flex-direction: column;
+        gap: 35px;
+        padding-top: 80px;
+    }
+
+    .a-propos-container p{
+        width: 245px;
+        font-size: 17px;
+    }
+    .a-propos-container img{
+        width: 230px;
+    }
+
+    .tags{
+        gap: 15px;
+        padding-top: 5px;
+    }
+
+    .tags li button{
+        padding: 7px;
+        font-size: 12px;
+    }
+
+}
