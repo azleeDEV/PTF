@@ -3,7 +3,9 @@
     padding: 0;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 ul{
     list-style: none;
@@ -30,6 +32,7 @@ header{
 
 .navbar{
     position: fixed;
+    z-index: 100;
     width: 100%;
     padding: 15px;
     display: flex;
@@ -62,7 +65,7 @@ header{
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
-    font-weight: 450;
+    font-weight: 650;
 }
 
 .navbar > span{
@@ -112,6 +115,12 @@ header{
     font-size: 25px;
   }
 
+  .intro{
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.7s 0.1s ease-out forwards;
+  }
+
   .a-propos{
     /* background-color: #494949 !important; */
     height: 100vh;
@@ -136,6 +145,9 @@ header{
     width: 300px;
     border-radius: 95px;
     border: solid 3px rgb(255, 255, 255);
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 0.2s ease-out forwards;
   }
 
   .a-propos-container p{
@@ -171,7 +183,7 @@ header{
         border-radius: 100PX;
         border: none;
         color: white;
-        background-color: rgb(29, 29, 29);
+        background-color: rgb(79, 79, 79);
         text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
 
@@ -179,16 +191,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#000000;
+    background-color:#141212;
     width: 100px;
     height: 100px;
     border-radius: 70px;
     border: solid 3px rgb(255, 255, 255);
     text-decoration: none;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 0.3s ease-out forwards;
   }
 
   .button-arrow:hover{
-    background-color: rgb(63, 62, 62);
+    background-color: rgb(24, 24, 24);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
   }
 
@@ -202,6 +217,79 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+  
+  .projets{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 300px;
+    font-family: "League Spartan", sans-serif;
+    color: whitesmoke;
+    padding-bottom: 200px;
+    padding-top: 150px;
+  }
+
+    .kasa,.sophie{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projets .projets-container img{
+    width: 400px;
+    border: solid 2px #272626;
+    border-radius: 7px;
+  }
+
+  .projets h2{
+    padding-bottom: 8px;
+    padding-top: 25px;
+  }
+
+  .projets p{
+    padding-bottom: 8px;
+  }
+
+  @keyframes apparition {
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+  }
+
+  .Competences-container{
+    margin: 100px 100px;
+    padding: 100px;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 30px;
+    background-color: #141212;
+    border-radius: 30px;
+  }
+
+  .Competences-container img{
+    width: 16px;
+  }
+
+  .Competences-container h4{
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+
+  .Competences-container p{
+    font-size: 20px;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
 @media screen and (max-width: 992px) {
@@ -243,14 +331,14 @@ header{
 
     .nav-links{
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(5px);
         height: 100vh;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: -200vh;
+        margin-left: -100%;
         transition: all 0.3s ease;
     }
 
@@ -279,13 +367,13 @@ header{
     }
 
     .a-propos{
-        padding-top: 80px;
+        padding-top: 30px;
         padding-bottom: 130px;
     }
     .a-propos-container{
         flex-direction: column;
         gap: 35px;
-        padding-top: 80px;
+        padding-top: 20px;
     }
 
     .a-propos-container p{
@@ -305,5 +393,26 @@ header{
         padding: 7px;
         font-size: 12px;
     }
+    
+    .projets{
+        flex-direction: column;
+        gap: 150px;
+        align-items: center;
+    }
 
+    .projets .projets-container img{
+        width: 300px;
+    }
+
+    .Competences-container{
+        flex-direction: column !important;
+    }
+
+    .Competences-container h4{
+        font-size: 15px;
+    }
+
+    .Competences-container p{
+      font-size: 12px;
+    }
 }
