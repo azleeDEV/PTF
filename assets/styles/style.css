@@ -346,6 +346,8 @@ header{
 
     .nav-links{
         position: absolute;
+        top: 0;
+        left: 0;
         background-color: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(5px);
         height: 100vh;
