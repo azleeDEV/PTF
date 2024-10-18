@@ -1,0 +1,109 @@
+/* Styles généraux */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.all-carousel{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 70px;
+    margin: 125px;
+}
+
+/* Conteneur du carrousel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Chaque élément du carrousel */
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Boutons de navigation */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption h2{
+    padding-bottom: 8px;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.carousel-caption h3{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.carousel-caption p{
+    padding-bottom: 8px;
+    font-size: 13px;
+}
+.carousel-caption{
+    font-family: "League Spartan", sans-serif;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 992px) {
+    .all-carousel{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .carousel-wrapper{
+        margin-bottom: 60px;
+    }
+
+    .carousel-container{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .carousel-container {
+        width: 270px;
+    }
+}

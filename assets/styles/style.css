@@ -7,6 +7,15 @@ html{
     scroll-behavior: smooth;
 }
 
+.title {
+    color: whitesmoke;
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 80px;
+}
+
 ul{
     list-style: none;
 }
@@ -19,7 +28,7 @@ body{
 }
 
 nav{
-    background-color: whitesmoke;
+    background-color: rgb(207, 207, 207);
     border-bottom: 1px solid;
     font-family: "League Spartan", sans-serif;
 }
@@ -217,6 +226,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 80px;
   }
   
   .projets{
@@ -224,11 +234,10 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    gap: 300px;
+    gap: 95px;
     font-family: "League Spartan", sans-serif;
     color: whitesmoke;
-    padding-bottom: 200px;
-    padding-top: 150px;
+    padding-bottom: 140px;
   }
 
     .kasa,.sophie{
@@ -237,18 +246,14 @@ header{
   }
 
   .projets .projets-container img{
-    width: 400px;
+    width: 240px;
     border: solid 2px #272626;
     border-radius: 7px;
   }
-
-  .projets h2{
-    padding-bottom: 8px;
-    padding-top: 25px;
-  }
-
-  .projets p{
-    padding-bottom: 8px;
+  
+  .skills-flex{
+    display: flex;
+    justify-content: center;
   }
 
   @keyframes apparition {
@@ -259,30 +264,36 @@ header{
   }
 
   .Competences-container{
-    margin: 100px 100px;
+    margin: 100px 0px;
     padding: 100px;
     color: white;
     font-family: "League Spartan", sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: baseline;
     gap: 30px;
-    background-color: #141212;
+    background-image: url('../images/starbg.jpg');
+    background-size:cover ;
+    background-repeat:no-repeat;
+    background-attachment: scroll;
     border-radius: 30px;
   }
 
   .Competences-container img{
-    width: 16px;
+    width: 19px;
+    margin-right: 6px;
   }
 
   .Competences-container h4{
     font-size: 30px;
     padding-bottom: 15px;
+    margin: 30px;
   }
 
   .Competences-container p{
     font-size: 20px;
+    line-height: 1.6;
   }
 
   .content{
@@ -290,6 +301,10 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
+
+  .fa-brands{
+    margin-right: 6px;
   }
 
 @media screen and (max-width: 992px) {
@@ -373,7 +388,7 @@ header{
     .a-propos-container{
         flex-direction: column;
         gap: 35px;
-        padding-top: 20px;
+        padding-top: 145px;
     }
 
     .a-propos-container p{
@@ -405,14 +420,24 @@ header{
     }
 
     .Competences-container{
+        display: flex;
+        align-items: center;
         flex-direction: column !important;
+        margin: 40px 40px;
+        padding: 30px;
+        gap: 0;
+        /* height: 600px; */
+    }
+
+    .content{
+      align-self: center;
     }
 
     .Competences-container h4{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .Competences-container p{
-      font-size: 12px;
+      font-size: 13px;
     }
 }

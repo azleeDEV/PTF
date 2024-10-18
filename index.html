@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/carousel.css">
 </head>
 <body>
     <hader>
@@ -45,44 +46,82 @@
             <div class="flex-arrow"><a href="#projets" class="button-arrow"><i class="fa-solid fa-arrow-down"></i></a>
             </div>     
         </div>
-        <section>
-            <div class="projets" id="projets">
-                <div class="projets-container kasa">
-                    <img src="./assets/images/Kasa1.png">
-                    <img src="./assets/images/Kasa2.png">
-                    <img src="./assets/images/Kasa3.png"/>
-                    <h2>Kasa</h2>
-                    <p>ReactJS</p>
-                    <h3>App Web Location Immobilier</h3>
+        <h4 id="projets" class="title">Projets</h4>
+        <section class="all-carousel">
+            <div class="carousel-wrapper">
+                <div id="carousel1" class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item"><img src="./assets/images/Sophi1.png" alt="Image 1"></div>
+                        <div class="carousel-item"><img src="./assets/images/Sophi2.png" alt="Image 2"></div>
+                        <div class="carousel-item"><img src="./assets/images/Sophi3.png" alt="Image 3"></div>
+                    </div>
+                    <button class="prev-btn" onclick="prevSlide(1)">&#10094;</button>
+                    <button class="next-btn" onclick="nextSlide(1)">&#10095;</button>
                 </div>
-                <div class="projets-container booki">
-                    <img src="./assets/images/booki1.png">
-                    <h2>Booki</h2>
-                    <p>HTML,CSS</p>
-                    <h3>Site Location de Vacances</h3>
-                </div>
-                <div class="projets-container sophie">
-                    <img src="./assets/images//Sophi1.png">
-                    <img src="./assets/images/Sophi3.png"/>
+                <div class="carousel-caption">
                     <h2>Sophie Bluel</h2>
                     <p>HTML, CSS, JavaScript</p>
                     <h3>Portfolio Architecte d'intérieur</h3>
                 </div>
             </div>
+                
+            <div class="carousel-wrapper">  
+                <div id="carousel2" class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item"><img src="./assets/images/Kasa1.png" alt="Image 1"></div>
+                        <div class="carousel-item"><img src="./assets/images/Kasa2.png" alt="Image 2"></div>
+                        <div class="carousel-item"><img src="./assets/images/Kasa3.png" alt="Image 3"></div>
+                    </div>
+                    <button class="prev-btn" onclick="prevSlide(2)">&#10094;</button>
+                    <button class="next-btn" onclick="nextSlide(2)">&#10095;</button>
+                </div>
+                <div class="carousel-caption">
+                    <h2>Kasa</h2>
+                    <p>ReactJS</p>
+                    <h3>App Web Location Immobilier</h3>
+                </div>
+            </div> 
+
+            <div class="carousel-wrapper"> 
+                <div id="carousel3" class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item"><img src="./assets/images/booki1.png" alt="Image 1"></div>
+                        <div class="carousel-item"><img src="./assets/images/booki2.png" alt="Image 2"></div>
+                        <div class="carousel-item"><img src="./assets/images/booki3.png" alt="Image 3"></div>
+                    </div>
+                    <button class="prev-btn" onclick="prevSlide(3)">&#10094;</button>
+                    <button class="next-btn" onclick="nextSlide(3)">&#10095;</button>
+                </div>
+                <div class="carousel-caption">
+                    <h2>Booki</h2>
+                    <p>HTML,CSS</p>
+                    <h3>Site Location de Vacances</h3> 
+                </div>
+            </div> 
         </section>
-        <section>
+        <h4 class="title">Compétences</h4>
+        <section class="skills-flex">
             <div class="Competences-container" id="CP">
                 <div class="content">
                     <h4>Programmation</h4>
-                    <p><i class="fa-brands fa-js"></i>JavaScript, <img src="./assets/images/typescript.png"/>Typescript</p>
+                    <p>
+                        <i class="fa-brands fa-js"></i>JavaScript<br>
+                        <img src="./assets/images/typescript.png"/>Typescript<br>
+                    </p>
                 </div>
                 <div class="content">
                     <h4>FrontEnd</h4>
-                    <p><i class="fa-brands fa-html5"></i>HTML, <i class="fa-brands fa-css3-alt"></i> CCS, <i class="fa-brands fa-react"></i> ReactJS</p>
+                    <p>
+                        <i class="fa-brands fa-html5"></i>HTML<br>
+                        <i class="fa-brands fa-css3-alt"></i> CCS<br>
+                        <i class="fa-brands fa-react"></i> ReactJS<br>
+                    </p>
                 </div>
                 <div class="content">
                     <h4>BackEnd</h4>
-                    <p><i class="fa-brands fa-node-js"></i>NodeJS / ExpressJS</p>
+                    <p>
+                        <i class="fa-brands fa-node-js"></i>NodeJS / ExpressJS
+                    </p>
                 </div>
             </div>
         </section>
@@ -90,5 +129,6 @@
     <footer>
     </footer>
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/carousel.js"></script>
 </body>
 </html>
