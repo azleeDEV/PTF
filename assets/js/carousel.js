@@ -1,5 +1,5 @@
 // Créer un tableau pour stocker l'index actuel de chaque carrousel
-let currentIndex = [0, 0, 0]; // Pour 3 carrousels
+let currentIndex = [0, 0, 0];
 const carousels = [
     document.querySelectorAll('#carousel1 .carousel-item'),
     document.querySelectorAll('#carousel2 .carousel-item'),

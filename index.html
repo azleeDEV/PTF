@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Amjed, développeur web passionné, vous présente ses réalisations en création de sites internet modernes et interactifs. Spécialisé en développement responsive et design intuitif, découvrez mes projets et services." />
-    <title>Portfolio Amjed</title>
+    <meta name="description" content="AZLee, développeur web passionné, vous présente ses réalisations en création de sites internet modernes et interactifs. Spécialisé en développement responsive et design intuitif, découvrez mes projets et services." />
+    <title>Portfolio AZLee</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
@@ -15,17 +15,17 @@
 <body>
     <hader>
         <nav class="navbar">
-            <a href="#ap" class="logo">
+            <a href="#" class="logo">
                 <img src="assets/images/robin.jpg" alt="LogoRobin">
                 <span class="title-logo"><h1>AZLeeDev</h1></span>
             </a>
             <span class="title-logo">AZLeeDev</span>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#ap">À propos</a></li>
+                    <li><a href="#">À propos</a></li>
                     <li><a href="#projets">Projets</a></li>
                     <li><a href="#CP">Compétences</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <a class="menu"><i class="fa-solid fa-bars"></i></a>
@@ -33,7 +33,7 @@
     </hader>
     <main>
         <div class="a-propos">
-            <div id="ap" class="a-propos-container">
+            <div class="a-propos-container">
                 <img src="assets/images/robin.jpg" alt="Robin">
                 <div class="intro">
                     <p><span class="span-p">Bonjour,<br> Je suis AZ développeur web</span><br>spécialisé dans la création de sites modernes, responsives et centrés sur l'utilisateur.<br> Mon objectif : allier design et performance pour une expérience fluide sur tous les supports.</p>
@@ -44,7 +44,7 @@
                     </ul>
                 </div>
             </div>   
-            <div class="flex-arrow"><a href="#projets" class="button-arrow"><i class="fa-solid fa-arrow-down"></i></a>
+            <div class="flex-arrow"><a aria-label="scrolldown "href="#projets" class="button-arrow"><i class="fa-solid fa-arrow-down"></i></a>
             </div>     
         </div>
         <h2 id="projets" class="title">Projets</h2>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h2>Kasa</h2>
-                    <p>ReactJS</p>
+                    <p>ReactJS <span><button class="more"><a href="https://azleedev.github.io/Projet-5-location-immo/" target="_blank">Voir Plus</a></button></span></p>
                     <h3>App Web Location Immobilier</h3>
                 </div>
             </div> 
@@ -95,7 +95,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h2>Booki</h2>
-                    <p>HTML,CSS</p>
+                    <p>HTML,CSS<span><button class="more"><a href="https://azleedev.github.io/Projet-2-booki-master/" target="_blank">Voir Plus</a></button></span></p>
                     <h3>Site Location de Vacances</h3> 
                 </div>
             </div> 
@@ -126,8 +126,22 @@
                 </div>
             </div>
         </section>
+        <section id="contact">
+            <h2>Contact</h2>
+		    <p>Vous avez un projet ? Discutons-en !</p>
+		    <form action="#" method="post">
+			    <label for="name">Nom</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Envoyer">
+		    </form>
+        </section>
     </main>
     <footer>
+        <p>© 2024 powered By AZLeeDev</p>
     </footer>
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/carousel.js"></script>
