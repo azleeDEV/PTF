@@ -17,7 +17,7 @@ ul{
 }
 
 body{
-    background-image: url('./../images/Back.jpg');
+    background-image: url(./../images/back.jpg);
     background-size:cover ;
     background-repeat:no-repeat;
     background-attachment: scroll;
@@ -228,7 +228,7 @@ footer p {
 
   .button-arrow i{
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: #E0E0E0;
   }
 
   .flex-arrow{
@@ -254,7 +254,7 @@ footer p {
     align-items: flex-end;
     gap: 95px;
     font-family: "League Spartan", sans-serif;
-    color: whitesmoke;
+    color: #E0E0E0;
     padding-bottom: 140px;
   }
 
@@ -282,7 +282,7 @@ footer p {
   }
 
   .Competences-container > *{
-    color: black;
+    color: whitesmoke;
     font-weight: 600;
   }
 
@@ -296,10 +296,8 @@ footer p {
     flex-direction: row;
     align-items: baseline;
     gap: 30px;
-    background-color: rgb(236, 236, 236);
-    background-size:cover ;
-    background-repeat:no-repeat;
-    background-attachment: scroll;
+    background: rgb(10,8,23);
+    background: linear-gradient(180deg, rgba(10,8,23,1) 0%, rgba(92,92,92,1) 59%, rgba(153,153,153,1) 81%);
     border-radius: 30px;
   }
 
@@ -334,10 +332,8 @@ footer p {
     width: 80%;
     margin: auto;
     margin-top: 150px;
-    background-color: rgb(150, 150, 150);
-    background-size:cover ;
-    background-repeat:no-repeat;
-    background-attachment: scroll;
+    background: rgb(10,8,23);
+    background: linear-gradient(180deg, rgba(10,8,23,1) 0%, rgba(92,92,92,1) 59%, rgba(153,153,153,1) 81%);
     padding: 40px;
     border-radius: 30px;
     margin-bottom: 50px;
@@ -345,7 +341,7 @@ footer p {
   #contact > * {
     text-align: center;
     font-family: "League Spartan", sans-serif;
-    color: rgb(0, 0, 0);  
+    color: #E0E0E0;  
   }
   #contact h2{
     margin-bottom: 20px;
@@ -362,9 +358,9 @@ footer p {
     font-size: 1.2em;
     border: none;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
-    background-color: #141212;
+    background-color: #E0E0E0;
     border-radius: 20px;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     padding: 15px;
   }
   #contact label {
@@ -373,12 +369,23 @@ footer p {
   #contact textarea {
     border: none;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
-    background-color: #272626;
+    background-color: #E0E0E0;
     border-radius: 30px;
     margin-bottom: 5px;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     padding: 15px;
   }
+
+  #submit{
+    background-color: #1A1A1D !important;
+    color: whitesmoke !important;
+    cursor: pointer !important;
+  }
+
+  #submit:hover{
+    background-color: rgb(46, 46, 46) !important;
+  }
+
 
   .more{
     margin-left: 5px;
