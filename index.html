@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/carousel.css">
+    <link rel="stylesheet" href="./assets/styles/accordion.css">
 </head>
 <body>
     <hader>
@@ -63,6 +64,12 @@
                     <h2>Sophie Bluel</h2>
                     <p>HTML, CSS, JavaScript</p>
                     <h3>Portfolio Architecte d'intérieur</h3>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">Description</button>
+                        <div class="accordion-content">
+                            <p>Sophie Bluel est une architecte d'intérieur, et ce projet est son portfolio. Il est composé d'une galerie où tous ses projets sont présentés, triés par type, avec des boutons pour filtrer. Elle a la possibilité d'ajouter et de supprimer des projets directement via un mode administrateur. Le site a été réalisé en HTML, CSS et JavaScript.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
                 
@@ -80,6 +87,12 @@
                     <h2>Kasa</h2>
                     <p>ReactJS <span><button class="more"><a href="https://azleedev.github.io/Projet-5-location-immo/" target="_blank">Voir Plus</a></button></span></p>
                     <h3>App Web Location Immobilier</h3>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">Description</button>
+                        <div class="accordion-content">
+                            <p>Kasa est une application de location immobilière développée en ReactJS, permettant aux utilisateurs de publier leurs annonces. Pour chaque annonce, il y a un carrousel d'images ainsi que les informations du locataire ou du vendeur.</p>
+                        </div>
+                    </div>
                 </div>
             </div> 
 
@@ -96,7 +109,13 @@
                 <div class="carousel-caption">
                     <h2>Booki</h2>
                     <p>HTML,CSS<span><button class="more"><a href="https://azleedev.github.io/Projet-2-booki-master/" target="_blank">Voir Plus</a></button></span></p>
-                    <h3>Site Location de Vacances</h3> 
+                    <h3>Site Location de Vacances</h3>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">Description</button>
+                        <div class="accordion-content">
+                            <p>Booki est un site de location de vacances responsive qui fournit des informations sur les meilleurs hébergements ainsi que sur les activités à faire.</p>
+                        </div>
+                    </div> 
                 </div>
             </div> 
         </section>
@@ -145,5 +164,6 @@
     </footer>
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/carousel.js"></script>
+<script src="./assets/js/accordion.js"></script>
 </body>
 </html>

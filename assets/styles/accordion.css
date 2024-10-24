@@ -1,0 +1,39 @@
+.accordion-header {
+    background-color: #535353;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    text-align: left;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #242424;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: black;
+    overflow: hidden;
+    align-items: center;
+    max-width: 800px;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content.open {
+    display: block;  
+}
+
+.accordion-content p {
+    margin: 0;
+    line-height: 130%;
+}
