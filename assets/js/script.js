@@ -13,3 +13,15 @@ navLinks.forEach(link => {
         btn.classList.remove('open');
     });
 });
+
+// verification email/////////////
+
+document.querySelector("form").addEventListener("submit", function (event) {
+    const email = document.getElementById("email").value;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailPattern.test(email)) {
+        alert("Veuillez entrer un email valide.");
+        event.preventDefault();
+    }
+});
