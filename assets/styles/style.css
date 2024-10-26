@@ -393,7 +393,7 @@ footer p {
 
 
   .more{
-    padding: 6px;
+    padding: 5px;
     margin-left: 10px;
     background-color: whitesmoke;
     border: none;
@@ -499,8 +499,13 @@ footer p {
 
     .a-propos-container p{
         width: 245px;
-        font-size: 17px;
+        font-size: 15px;
     }
+
+    .span-p{
+      font-size: 17px;
+    }
+
     .a-propos-container img{
         width: 230px;
     }
