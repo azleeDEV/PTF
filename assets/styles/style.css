@@ -145,7 +145,7 @@ footer p {
   }
 
   .a-propos{
-    padding-bottom: 140px;
+    padding: 200px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -238,7 +238,7 @@ footer p {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 60px; /* Ajuste l'espacement au-dessus */
+    margin-top: 75px; /* Ajuste l'espacement au-dessus */
     margin-bottom: 40px; /* Ajuste l'espacement en-dessous */
 }
 
@@ -488,8 +488,7 @@ footer p {
     }
 
     .a-propos{
-        padding-top: 30px;
-        padding-bottom: 130px;
+        padding: 0px;
     }
     .a-propos-container{
         flex-direction: column;
