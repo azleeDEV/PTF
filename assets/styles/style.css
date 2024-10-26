@@ -145,8 +145,6 @@ footer p {
   }
 
   .a-propos{
-    /* background-color: #494949 !important; */
-    height: 100vh;
     padding-bottom: 140px;
     display: flex;
     flex-wrap: wrap;
@@ -235,13 +233,14 @@ footer p {
     color: #E0E0E0;
   }
 
-  .flex-arrow{
+  .flex-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 80px;
-  }
+    margin-top: 60px; /* Ajuste l'espacement au-dessus */
+    margin-bottom: 40px; /* Ajuste l'espacement en-dessous */
+}
 
   .title {
     color: whitesmoke;
@@ -251,16 +250,16 @@ footer p {
     font-size: 30px;
 }
   
-  .projets{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 95px;
-    font-family: "League Spartan", sans-serif;
-    color: #E0E0E0;
-    padding-bottom: 140px;
-  }
+#projets {
+  margin-top: 40px; /* Espace en haut pour séparer de la flèche */
+  margin-bottom: 60px; /* Espace en bas pour séparer des éléments suivants */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 95px;
+  font-family: "League Spartan", sans-serif;
+  color: #E0E0E0;
+}
 
     .kasa,.sophie{
     display: flex;
@@ -313,7 +312,7 @@ footer p {
   .Competences-container h4{
     font-size: 30px;
     padding-bottom: 15px;
-    margin: 30px;
+    margin: 15px 30px;
   }
 
   .Competences-container p{
