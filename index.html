@@ -16,24 +16,24 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">
+            <div class="logo"> 
                 <img src="assets/images/robin.webp" alt="LogoRobin">
                 <span class="title-logo">AZLeeDev</span>
-            </a>
+            </div>
             <span class="title-logo">AZLeeDev</span>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#projets">Projets</a></li>
-                    <li><a href="#CP">Compétences</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><span data-target="ap">À propos</span></li>
+                    <li><span data-target="projets">Projets</span></li>
+                    <li><span data-target="CP">Compétences</span></li>
+                    <li><span data-target="contact">Contact</span></li>
                 </ul>
             </div>
             <a href="#none" class="menu" aria-label="ouvrir le menu"><i class="fa-solid fa-bars"></i></a>
         </nav>
     </header>
     <main>
-        <div class="a-propos">
+        <div id="ap" class="a-propos">
             <div class="a-propos-container">
                 <img src="assets/images/robin.webp" alt="Robin">
                 <div class="intro">
@@ -117,9 +117,9 @@
                 </div>
             </div> 
         </section>
-        <h4 class="title">Compétences</h4>
-        <section class="skills-flex">
-            <div class="Competences-container" id="CP">
+        <section id="CP" class="skills-flex">
+            <h2  class="title">Compétences</h2>
+            <div class="Competences-container">
                 <div class="content">
                     <h4>Programmation</h4>
                     <p>

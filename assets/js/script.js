@@ -1,6 +1,6 @@
 const btn = document.querySelector(".menu");
 const nav = document.querySelector(".nav-links");
-const navLinks = document.querySelectorAll(".nav-links a");
+const navLinks = document.querySelectorAll(".nav-links span");
 
 btn.addEventListener('click',()=>{
     nav.classList.toggle('mobile-nav');
@@ -11,6 +11,8 @@ navLinks.forEach(link => {
     link.addEventListener('click', () => {
         nav.classList.remove('mobile-nav'); 
         btn.classList.remove('open');
+        const offset = link.dataset.target === "ap"? 0 : 100
+        scrollToAnchor(link.dataset.target,offset)
     });
 });
 
@@ -25,3 +27,21 @@ document.querySelector("form").addEventListener("submit", function (event) {
         event.preventDefault();
     }
 });
+
+// ancre ciblée/////
+
+function scrollToAnchor(anchorId, offset = 0) {
+    const element = document.getElementById(anchorId);
+    console.log(element)
+    if (element) {
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+
+        console.log(elementPosition)
+        console.log(offsetPosition)
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+}
