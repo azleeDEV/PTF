@@ -316,7 +316,7 @@ footer p {
     margin-right: 6px;
   }
 
-  .Competences-container h4{
+  .Competences-container h2{
     font-size: 30px;
     padding-bottom: 15px;
     margin: 15px 30px;
@@ -353,7 +353,7 @@ footer p {
     font-family: "League Spartan", sans-serif;
     color: #E0E0E0;  
   }
-  #contact h2{
+  #contact h1{
     margin-bottom: 20px;
   }
   #contact form {
@@ -550,7 +550,7 @@ footer p {
       align-self: center;
     }
 
-    .Competences-container h4{
+    .Competences-container h2{
         font-size: 20px;
     }
 
