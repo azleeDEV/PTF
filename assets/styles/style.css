@@ -558,6 +558,10 @@ footer p {
       font-size: 13px;
     }
 
+    .Competences-container img{
+      width: 13px;
+    }
+
     #contact{
       margin-top: 50px;
     }
