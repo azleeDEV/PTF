@@ -20,6 +20,7 @@ import wallet2 from "../../assets/envoi.png";
 import wallet3 from "../../assets/succenvoi.png";
 import wallet4 from "../../assets/retrait.png";
 import wallet5 from "../../assets/succretrait.png";
+import music1 from "../../assets/music.png";
 
 const Slider = ({ images }) => (
   <Swiper
@@ -69,7 +70,7 @@ const projects = [
     title: "🎵 AZMusic | Application de Musique",
     tech: "🛠 HTML, CSS, JavaScript",
     desc: "➡️ Un lecteur de musique interactif et responsive",
-    images: [booki1, booki2, booki3],
+    images: [music1],
   },
   {
     title: "🔗 EthWallet | Portefeuille Crypto ETH",
