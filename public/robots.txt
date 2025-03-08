@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ton-site.com/sitemap.xml

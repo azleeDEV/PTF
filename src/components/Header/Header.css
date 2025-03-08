@@ -1,0 +1,111 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+ul{
+  list-style: none;
+}
+.tags{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.tags li button{
+      padding: 9px;
+      border-radius: 100PX;
+      border: none;
+      color: white;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4));
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+.a-propos-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 11rem 11rem 4rem 11rem;
+    padding-top: 150px;
+}
+.a-propos-container img{
+    width: 300px;
+    border-radius: 95px;
+    border: solid 3px rgb(255, 255, 255);
+}
+.a-propos-container p{
+    font-family:"League Spartan", sans-serif;
+    color: rgb(216, 216, 216);
+    text-shadow: 2px 1px 2px rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 23px;
+    text-align: center;
+    width: 540px;
+    margin: 20px;
+    border-radius: 40px;
+    line-height: 130%;
+  }
+.span-p{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 1px 2px rgb(0, 0, 0);
+  }
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20rem;
+  }
+  .btn {
+    padding: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: solid 2px white;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: rgb(19, 19, 19);
+    color: rgb(0, 0, 0);
+  }
+  .btn svg {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 1024px) {
+    .a-propos-container {
+        flex-direction: column-reverse;
+    }
+  }
+  @media (max-width: 768px) {
+    .a-propos-container {
+        flex-direction: column-reverse;
+        gap: 50px;
+        margin-top: 3rem;
+        margin-bottom: 0;
+        padding-top: 55px;
+    }
+    .a-propos-container img{
+      width: 250px;
+    }
+    .a-propos-container p{
+        font-weight: 500;
+        font-size: 19px;
+        width: 320px;
+        margin: 35px;
+        line-height: 150%;
+    }
+    .header-wrapper {
+        margin-bottom: 10rem;
+    }
+    .tags{
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,136 @@
+.navbar {
+    background-color: rgb(206, 206, 206);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+  .Robin {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .Robin:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    font-family: "League Spartan", sans-serif;
+  }
+  
+  .menu-desktop {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: "League Spartan", sans-serif;
+    transition: color 0.3s;
+    cursor: pointer;
+    
+  }
+  
+  .nav-link:hover {
+    color: rgb(150, 150, 150);
+  }
+  
+  .menu-mobile {
+    display: none;
+    z-index: 1000;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-button svg {
+    color: #000000;
+    transition: all 0.3s ease-in-out; 
+    transform: scale(1); 
+  }
+  
+  .menu-button svg:hover {
+    color: #000000; 
+    transform: scale(1.1);
+  }
+  .menu-button.open svg {
+    color: white;
+    background-color: rgb(31, 31, 31);
+    border-radius: 20px;
+    padding: 4px;
+    transform: rotate(180deg);
+    transition: color 0.3s ease-in-out;
+  }
+  .menu-button.open svg:hover {
+    transform: scale(1.1);
+    background-color: #2b2b2b;
+  }
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 999;
+  transform: translateX(-100%);
+  opacity: 0; 
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+  @media (max-width: 768px) {
+    .mobile-menu.open {
+      transform: translateX(0);
+      opacity: 1;
+    }  
+    .navbar-container {
+      align-items: flex-end;
+    }
+    .menu-desktop {
+      display: none;
+    }
+    .menu-mobile {
+      display: block;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      transition: color 0.3s;
+      font-size: 1.5rem;
+    }
+    .nav-link:hover {
+      color: rgb(165, 165, 165);
+    }
+  }

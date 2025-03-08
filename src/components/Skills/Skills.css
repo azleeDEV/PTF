@@ -1,0 +1,101 @@
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 15rem;
+}
+
+.skills-container h1 {
+    font-size: 27px;
+}
+
+.Competences-container > *{
+    color: whitesmoke;
+    font-weight: 600;
+  }
+
+  .Competences-container{
+    margin: 60px 21rem;
+    padding: 120px;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+  }
+
+  .Competences-container img{
+    width: 19px;
+    margin-right: 6px;
+  }
+
+  .Competences-container h2{
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    margin: 15px 30px;
+  }
+
+  .Competences-container p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fa-brands{
+    margin-right: 6px;
+  }
+
+  @media (max-width: 1024px) {
+    .Competences-container {
+      padding: 100px 55px;
+  }
+    .Competences-container h2{
+      font-size: 20px;
+  }
+
+  .Competences-container img{
+    width: 13px;
+  }
+}
+
+  @media (max-width: 768px) {
+    .Competences-container{
+      display: flex;
+      align-items: center;
+      flex-direction: column !important;
+      margin: 50px 40px;
+      padding: 40px;
+      gap: 0;
+  }
+
+  .content{
+    align-self: center;
+  }
+
+  .Competences-container h2{
+      font-size: 25px;
+  }
+
+  .Competences-container p{
+    font-size: 17px;
+  }
+
+  .Competences-container img{
+    width: 13px;
+  }
+}
