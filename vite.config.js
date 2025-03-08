@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'build',  // Définir le répertoire de sortie comme 'build'
+    outDir: 'build',  // Sortie du build dans le dossier 'build'
   },
+  base: '/PTF/',  // Définit la base pour GitHub Pages
 })
