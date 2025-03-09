@@ -16,10 +16,10 @@ const Header = () => {
       <div className="tags-wrapper">
         <ul className="tags">
           <li><button>Développeur 💻</button></li>
-          <li><button>SEO 🔍</button></li>
           <li><button>Web & Blockchain 🌐🔗</button></li>
-          <li><button>Expérience Utilisateur & Performance ⚡📱</button></li>
           <li><button>Smart Contracts & Web3 🔒🚀</button></li>
+          <li><button>Expérience Utilisateur & Performance ⚡📱</button></li>
+          <li><button>SEO 🔍</button></li>
         </ul>
       </div>  
     </div>
