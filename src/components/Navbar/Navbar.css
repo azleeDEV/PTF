@@ -51,6 +51,10 @@
     cursor: pointer;
     
   }
+  .nav-link:hover {
+    transform: scale(1.06);
+    transition: 0.3s;
+  }
   
   .nav-link:hover {
     color: rgb(150, 150, 150);
