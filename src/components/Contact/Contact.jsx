@@ -3,9 +3,9 @@ import "./Contact.css"
 const Contact = () => {
   return (
     <div id="Contact">
-         <h1>Contact</h1>
-         <p>Vous avez un projet ? Discutons-en !</p>
-         <form action="#" method="post">
+      <h1>Contact</h1>
+      <p className="sous-titre">Vous avez un projet ? Discutons-en !</p>
+      <form action="#" method="post">
 			<label htmlFor="name">Nom</label>
             <input type="text" name="name" id="name" placeholder="Entrez votre nom" required/>
             <label htmlFor="email">Email</label>
