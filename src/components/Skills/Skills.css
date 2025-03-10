@@ -74,6 +74,9 @@
 }
 
   @media (max-width: 768px) {
+    .skills-container {
+      margin-top: 7rem;
+    }
     .Competences-container{
       display: flex;
       align-items: center;

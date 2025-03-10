@@ -9,3 +9,10 @@
     font-size: 27px;
     margin-bottom: 3rem;
 }
+
+@media (max-width: 768px) {
+    .projets-wrapper {
+        margin-top: 7rem;
+    }
+    
+}

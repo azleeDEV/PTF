@@ -60,8 +60,9 @@
   }
 
   @media (max-width: 768px) {
-    #contact{
+    #Contact{
         margin-top: 50px;
+        margin-top: 7rem;
       }
   
       #contact p{
