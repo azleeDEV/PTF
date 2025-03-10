@@ -10,16 +10,13 @@ import booki1 from "../../assets/booki1.webp";
 import booki2 from "../../assets/booki2.webp";
 import booki3 from "../../assets/booki3.webp";
 import kasa1 from "../../assets/Kasa1.jpg";
-import kasa2 from "../../assets/Kasa2.webp";
-import kasa3 from "../../assets/Kasa3.webp";
+import kasa2 from "../../assets/Kasa2.jpg";
 import Sophi1 from "../../assets/Sophi1.webp";
 import Sophi2 from "../../assets/Sophi2.webp";
 import Sophi3 from "../../assets/Sophi3.webp";
 import Spider1 from "../../assets/Spider1.png";
-import wallet2 from "../../assets/envoi.png";
-import wallet3 from "../../assets/succenvoi.png";
-import wallet4 from "../../assets/retrait.png";
-import wallet5 from "../../assets/succretrait.png";
+import wallet1 from "../../assets/wallet1.jpg";
+import wallet2 from "../../assets/wallet2.jpg";
 import music1 from "../../assets/music.png";
 
 const Slider = ({ images }) => (
@@ -52,7 +49,7 @@ const projects = [
     title: "🏡 Kasa | App Web Location Immobilier",
     tech: "⚛️ ReactJS",
     desc: "➡️ Une plateforme moderne pour la location de logements",
-    images: [kasa1, kasa2, kasa3],
+    images: [kasa1, kasa2],
   },
   {
     title: "🏖 Booki | Site de Location de Vacances",
@@ -76,7 +73,7 @@ const projects = [
     title: "🔗 EthWallet | Portefeuille Crypto ETH",
     tech: "🛠 Solidity, Hardhat, EtherJS, ReactJS, MetaMask",
     desc: "➡️ Un wallet sécurisé pour Ethereum avec MetaMask",
-    images: [wallet2, wallet3, wallet4, wallet5],
+    images: [wallet1, wallet2],
   },
 ];
 
